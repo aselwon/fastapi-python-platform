@@ -2,6 +2,11 @@
 
 OpsTicket API is a multi-tenant REST API for internal operations ticketing. Registration creates a new tenant and its first administrator. The project demonstrates JWT authentication, role-based access control, PostgreSQL, Redis, Alembic migrations, soft deletion, audit fields, structured logging, tests, and Docker Compose.
 
+## Public demo
+
+No public demo is currently available. This repository is API-only; run it locally and use the Swagger UI at `/docs`.
+
+
 ## Stack
 
 Python 3.12+, FastAPI, Pydantic v2, Uvicorn, SQLAlchemy 2.x, PostgreSQL 16, Alembic, Redis 7, Pytest, HTTPX, and Docker Compose.
@@ -127,7 +132,7 @@ uv run ruff format --check .
 uv run pytest
 ```
 
-The repository also contains a GitHub Actions lint-and-test workflow. Hosted Actions were not run because this checkout has no remote. A local Swagger acceptance run registered a test account, authorized successfully, and created a ticket with HTTP 201; the screenshot evidence is [docs/swagger-acceptance.png](docs/swagger-acceptance.png).
+The repository also contains a GitHub Actions lint-and-test workflow. Hosted Actions were not run because this checkout has no remote. A local Swagger acceptance run registered a test account, authorized successfully, and created a ticket with HTTP 201.
 
 ## Troubleshooting
 
